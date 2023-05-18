@@ -16,8 +16,7 @@ public class Worker {
 	public Department department; 
 	List <HourContract> contracts = new ArrayList<>();//method constructor
 	//overload
-	public Worker() {
-		
+	public Worker() {		
 	}
 	//constructor
 	public Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
@@ -67,7 +66,7 @@ public class Worker {
 	}
 	//aqui é uma lógica que abre a mente
 	//precisa pegar o ano&&mes digitado pelo usuario e comparar com as datas da lista, sendo vdd, somar e mostrar ganho
-	public double income(int year, int month) {
+	public double income(int month, int year) {
 		double sum = baseSalary;
 		Calendar cal = Calendar.getInstance();		
 		for (HourContract c : contracts) {

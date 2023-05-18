@@ -6,7 +6,7 @@ public class HourContract {
 	private Date date;
 	private Double valuePerHour;
 	private Integer hours;
-	//sobrecarga
+	//overload 
 	public HourContract() {		
 	}
 	//constructor
@@ -42,6 +42,5 @@ public class HourContract {
 	
 	public double totalValue() {
 		return valuePerHour * hours;
-	}
-	
+	}	
 }

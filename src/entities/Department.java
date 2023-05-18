@@ -2,15 +2,14 @@ package entities;
 
 public class Department {
 	private String name;
-	
-	public Department() {
-		
+	//overload
+	public Department() {		
 	}
-
+	//constructor
 	public Department(String name) {
 		this.name = name;
 	}
-
+	//getters and setters
 	public String getName() {
 		return name;
 	}
